@@ -1,4 +1,5 @@
-PLANO 1 — INTRODUCCIÓN
+PLANO 1 — INTRODUCCIÓN<BR>
+<BR>
 Tiempo: 0:00 – 0:18
 Visual: Una plaza antigua → transición rápida a una ciudad moderna → celular con compras online → inteligencia artificial.
 Carlos: ¿Te has preguntado cómo pasamos de vender un producto en una plaza, a venderlo en segundos al otro lado del mundo?
