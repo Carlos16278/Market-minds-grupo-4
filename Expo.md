@@ -68,8 +68,8 @@ TODOS: …siguen siendo nuestras.
 PLANO 10 — CIERRE
 Tiempo: 2:52 – 3:05
 Visual: Las cuatro revoluciones aparecen rápidamente y terminan en los cuatro integrantes.
-Carlos: La primera revolución cambió cómo producíamos.
-Juan Pablo: La segunda, cómo vendíamos.
+Juan pablo: La primera revolución cambió cómo producíamos.
+Carlos: La segunda, cómo vendíamos.
 Daniel: La tercera y cuarta, cómo nos conectábamos.
 Juan: Y la quinta podría cambiar cómo tomamos decisiones.
 TODOS: El futuro de los negocios no será humano contra tecnología… será humanos que sepan trabajar con ella.
