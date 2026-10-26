@@ -1,0 +1,109 @@
+04 · Usuario
+
+1. Plan de entrevista
+
+Objetivo: Entender cómo vive el gestor de bodega el proceso de gestión y seguimiento del inventario en LIZCAR’S e identificar las dificultades que enfrenta al registrar las entradas y salidas de los repuestos.
+
+Dato	Respuesta
+Nombre (o iniciales)	Pendiente de confirmar
+Cargo	Gestor de Bodega
+Organización	LIZCAR’S
+Área	Bodega / Almacén
+Fecha y hora	Pendiente de realizar la entrevista
+Medio (presencial / llamada / videollamada)	Pendiente de confirmar
+¿Autorizó publicar sus respuestas en el repositorio?	Pendiente de solicitar autorización
+Entrevistador(es)	Pendiente de confirmar
+
+Contacto de la organización: Fernando Ramírez, gerente general.
+Referencia: Daniel Ramírez.
+
+2. Contexto del proceso
+
+LIZCAR’S es una empresa dedicada a la compra y venta de repuestos para carros.
+
+Actualmente, el gestor de bodega registra manualmente las entradas y salidas de los repuestos mediante Excel. Esto puede generar dificultades para conocer con exactitud las cantidades disponibles en el almacén.
+
+Entre los problemas identificados se encuentran la dificultad para conocer las existencias reales y la posibilidad de perder tiempo buscando repuestos. Además, se pueden presentar diferencias entre las cantidades registradas y las existencias físicas.
+
+Cuando se encuentran estas diferencias, se revisan los registros anteriores y se realiza un conteo manual para verificar las cantidades.
+
+3. Preguntas de la entrevista
+
+Piensa y siente
+
+1. ¿Qué es lo que más le preocupa cuando realiza la gestión y el seguimiento del inventario de LIZCAR’S?
+
+Rt:1 la mayor preocupacion esq el inventario quede acorde a la realidad para hacer un oriceso efectivo de venta
+
+2. Si pudiera cambiar una sola cosa del proceso de inventario, ¿cuál sería y por qué?
+
+RT=2 las cantidades de los productos sean acordes a la realidad para no perder posibles ventas
+
+Ve
+
+3. ¿Cómo es el lugar donde realiza el control del inventario y qué herramientas utiliza para registrar las entradas y salidas de los repuestos?
+
+RT=3 actualmente se usa la aplicacion de excel atravez
+
+4. ¿Ha visto en otra empresa o negocio una forma de gestionar el inventario que le parezca mejor? ¿Cuál?
+
+RT=4 no, no he visto y no he reconocido
+
+Oye
+
+5. ¿Qué le dicen el gerente o sus compañeros sobre la forma en que se registra y controla actualmente el inventario?
+
+RT=5 evidencian muchos errores dentro de este
+
+6. ¿De quién recibe instrucciones, quejas o recomendaciones relacionadas con la gestión del inventario?
+
+RT=6 del gerente general
+
+Dice y hace
+
+7. Cuénteme paso a paso qué hizo la última vez que tuvo que registrar la entrada o salida de repuestos del almacén.
+
+RT=7 me notifican del producto que se vendio o entro, abro la aplicacion de excel, me dirijo hacia el producto especifico y modifico la seccion de las cantidades del producto
+
+8. ¿Qué hace cuando encuentra una diferencia entre las cantidades registradas y las cantidades que realmente hay en el almacén?
+
+RT=8 las modifico para corrregirlas
+
+Dolores
+
+9. ¿Qué es lo más lento, difícil o frustrante de registrar y controlar el inventario mediante Excel?
+
+RT=9 al ser tanta cantidad de productos, y hacerlo de manera manual, se requiere demasiado tiempo para agregar productos o modificar su cuantificación
+
+10. ¿Recuerda la última vez que tuvo un problema al registrar o verificar las cantidades disponibles? ¿Qué pasó?
+
+RT=10 la semana pasada, se tenia cuantificado de un mismo producto, una parte izquierda y tres derechas, por ende se pidio al proveedor, dos partes izquierdad del mismo producto. Cusndo llegaron nos dimos cuenta q el inventario estaba mal y q realmente habian tres izquierdas y una derecha, por lo q quedamos con 5 izquierdas y una derecha
+
+Ganancias
+
+11. Si el proceso de inventario funcionara de manera ideal, ¿qué cambiaría en su día a día?
+
+RT=11 facilitaria en gran medida el conocimiento de la cantidad de productos q hay actualmente en el almacen, de esta manera haciendo mas facil el proceso de venta y de compra de mas prodcutos
+
+12. ¿Qué le ayudaría a ahorrar tiempo y esfuerzo al registrar las entradas, las salidas y las cantidades disponibles de los repuestos?
+
+RT=12 recortando la cantidad de tiempo a la hora de modificar el inventario y poder hacerlo al momento de la compra y venta del producto asi de esta manera no cometer errores
+
+Proceso actual en LIZCAR’S
+
+13. ¿Cómo verifica actualmente que las cantidades registradas en Excel coincidan con las existencias reales del almacén?
+
+RT=13 este proceso se realiza manualmente, una persona se dirige a la bodega y confirma la informacion
+
+14. ¿Qué procedimiento sigue cuando necesita corregir un registro o identificar un repuesto cuya cantidad no coincide con la registrada?
+
+RT=14 se verifica la cantidad de productos que hay y se corrije en el inventario en excel
+
+4. Resultados
+
+
+Hallazgo principal preliminar:
+
+El gestor de bodega necesita gestionar correctamente el inventario de LIZCAR’S porque el registro manual mediante Excel dificulta conocer con exactitud las cantidades disponibles de los repuestos. Esto puede ocasionar pérdida de tiempo al buscar mercancía y obliga a revisar registros y realizar conteos manuales cuando existen diferencias entre las cantidades registradas y las existencias reales.
+
+Este hallazgo es preliminar y deberá contrastarse con las respuestas obtenidas durante la entrevista.
