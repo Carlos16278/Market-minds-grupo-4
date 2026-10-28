@@ -1,8 +1,8 @@
-Issue 04 · Proceso actual en BPMN
-Semana: 2
+Issue 04 · Proceso actual en BPMN<BR>
+Semana: 2<BR>
 Rol: AP — Analista de procesos
 Fechas: 21/10/2026 → 25/10/2026
-Organización: LIZCAR'S
+Organización: LIZCAR'S<BR>
 Proceso: Gestión y seguimiento del inventario del almacén
 <br>
 DESCRIPTION
