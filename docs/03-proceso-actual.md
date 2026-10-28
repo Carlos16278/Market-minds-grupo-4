@@ -1,4 +1,4 @@
-Proceso actual — LIZCAR’S
+Proceso actual — LIZCAR’S<BR>
 
 1. BPMN de práctica<br>
 
