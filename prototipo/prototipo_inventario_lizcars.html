@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIZCAR'S | Control de inventario</title>
+<style>
+:root{--navy:#17283f;--navy2:#213b59;--blue:#2e6bd1;--bg:#f3f6fa;--white:#fff;--ink:#1d2939;--muted:#68778a;--line:#e1e7ef;--green:#18794e;--greenbg:#e7f6ed;--red:#b42318;--redbg:#fff0ee;--amber:#a15c07;--amberbg:#fff4dd}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}header{background:var(--navy);color:white;padding:21px max(20px,calc((100% - 1180px)/2));display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:12px;background:#dce9ff;color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:20px}.brand h1{font-size:20px;margin:0;letter-spacing:.4px}.brand p{margin:3px 0 0;font-size:12px;color:#c9d5e5}.header-right{text-align:right;font-size:12px;color:#d4dfec}main{max-width:1180px;padding:27px 20px 45px;margin:auto}.intro{display:flex;justify-content:space-between;gap:15px;align-items:end;flex-wrap:wrap}.intro h2{margin:0 0 5px;font-size:27px}.intro p{margin:0;color:var(--muted);font-size:14px}.tag{background:#e2ecfc;color:#2756a0;padding:7px 11px;border-radius:20px;font-size:12px;font-weight:700}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.stat{background:white;border:1px solid var(--line);border-radius:15px;padding:17px}.stat .label{font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:27px;margin-top:7px}.stat small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.layout{display:grid;grid-template-columns:350px 1fr;gap:17px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0}.panel h3{margin:0 0 17px;font-size:17px}.field{margin-bottom:13px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;border:1px solid #cfd8e4;border-radius:9px;padding:11px 12px;background:#fff;color:var(--ink);font:inherit;font-size:13px;min-width:0}.field input:focus,.field select:focus{outline:3px solid #2e6bd122;border-color:var(--blue)}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}button{border:0;border-radius:9px;padding:10px 13px;font:inherit;font-size:12px;font-weight:700;cursor:pointer}.primary{background:var(--blue);color:white;width:100%;padding:12px}.primary:hover{background:#2358b0}.secondary{background:#edf2f8;color:#33465f}.danger{background:var(--redbg);color:var(--red)}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}.toolbar h3{margin:0}.search{max-width:240px;width:100%;border:1px solid #cfd8e4;border-radius:9px;padding:10px 12px;font:inherit;font-size:12px}.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:11px}table{width:100%;border-collapse:collapse;font-size:12px;min-width:610px}th{text-align:left;background:#f6f8fb;color:#617187;font-size:10px;text-transform:uppercase;letter-spacing:.45px;padding:12px 11px}td{padding:12px 11px;border-top:1px solid var(--line);vertical-align:middle}tbody tr:hover{background:#fafcff}.partname{font-weight:750}.sku{display:block;color:var(--muted);font-size:10px;margin-top:3px}.qty{font-weight:800}.stockpill{display:inline-block;border-radius:20px;padding:5px 8px;font-size:10px;font-weight:800}.ok{background:var(--greenbg);color:var(--green)}.low{background:var(--amberbg);color:var(--amber)}.zero{background:var(--redbg);color:var(--red)}.rowactions{display:flex;gap:5px}.mini{padding:7px 8px;background:#edf2f8;color:#33465f}.history{margin-top:17px}.history h3{margin-bottom:13px}.historylist{display:grid;gap:8px}.move{display:flex;justify-content:space-between;gap:12px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:12px}.move strong{display:block;margin-bottom:3px}.move small{color:var(--muted)}.delta{font-weight:800;white-space:nowrap}.plus{color:var(--green)}.minus{color:var(--red)}.empty{text-align:center;padding:25px;color:var(--muted);font-size:13px}.note{margin-top:16px;background:#edf3fc;border-radius:10px;padding:12px 14px;color:#435b7b;font-size:11px;line-height:1.5}.section-label{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);font-weight:800;margin:18px 0 10px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:500px){header{padding:16px 18px}.header-right{text-align:left}main{padding:22px 13px}.intro h2{font-size:23px}.stats{gap:9px}.stat{padding:13px}.stat strong{font-size:23px}.panel{padding:15px}.two{gap:8px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand"><div class="logo">L</div><div><h1>LIZCAR'S</h1><p>Compra y venta de repuestos para vehículos</p></div></div>
+ <div class="header-right">MÓDULO DE BODEGA<br><span id="today"></span></div>
+</header>
+<main>
+ <div class="intro"><div><h2>Control de inventario</h2><p>Registra entradas y salidas para mantener las existencias actualizadas.</p></div><span class="tag">Prototipo funcional · v0.1</span></div>
+ <section class="stats">
+  <div class="stat"><span class="label">Referencias de repuestos</span><strong id="references">0</strong><small>Productos registrados</small></div>
+  <div class="stat"><span class="label">Unidades en almacén</span><strong id="units">0</strong><small>Suma de existencias actuales</small></div>
+  <div class="stat"><span class="label">Stock bajo</span><strong id="lowStock">0</strong><small>5 unidades o menos</small></div>
+  <div class="stat"><span class="label">Sin existencias</span><strong id="outStock">0</strong><small>Requieren reposición</small></div>
+ </section>
+ <div class="layout">
+  <section class="panel">
+   <h3>＋ Registrar movimiento</h3>
+   <form id="movementForm">
+    <div class="field"><label for="type">Tipo de movimiento</label><select id="type"><option value="entrada">Entrada de repuestos</option><option value="salida">Salida de repuestos</option></select></div>
+    <div class="field"><label for="sku">Código / referencia</label><input id="sku" placeholder="Ej. FIL-001" required maxlength="30"></div>
+    <div class="field"><label for="name">Nombre del repuesto</label><input id="name" placeholder="Ej. Filtro de aceite" required maxlength="100"></div>
+    <div class="two">
+     <div class="field"><label for="quantity">Cantidad</label><input id="quantity" type="number" min="1" step="1" placeholder="Ej. 10" required></div>
+     <div class="field"><label for="location">Ubicación (opcional)</label><input id="location" placeholder="Ej. Estante A2" maxlength="40"></div>
+    </div>
+    <div class="field"><label for="responsible">Responsable (opcional)</label><input id="responsible" placeholder="Nombre del gestor" maxlength="80"></div>
+    <div class="field"><label for="notes">Observaciones (opcional)</label><input id="notes" placeholder="Ej. Compra a proveedor" maxlength="160"></div>
+    <button class="primary" type="submit">Guardar movimiento</button>
+   </form>
+   <div class="note"><strong>Regla de control:</strong> las salidas no pueden superar la cantidad disponible. Si el código ya existe, el sistema actualiza ese repuesto y conserva su historial de movimientos.</div>
+  </section>
+  <section>
+   <div class="panel">
+    <div class="toolbar"><h3>Inventario actual</h3><input class="search" id="search" placeholder="Buscar por nombre o código..." aria-label="Buscar repuesto"></div>
+    <div class="tablewrap"><table><thead><tr><th>Repuesto</th><th>Ubicación</th><th>Existencias</th><th>Estado</th><th>Acción</th></tr></thead><tbody id="inventoryBody"></tbody></table><div id="inventoryEmpty" class="empty" hidden>No hay repuestos registrados. Agrega una entrada para comenzar.</div></div>
+   </div>
+   <div class="panel history">
+    <div class="toolbar"><h3>Historial de movimientos</h3><button class="secondary" id="clearHistory" type="button">Limpiar historial</button></div>
+    <div id="historyList" class="historylist"></div>
+   </div>
+  </section>
+ </div>
+</main>
+<script>
+const KEY='lizcars_inventario_v01';
+let state={items:[],moves:[]};
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&Array.isArray(saved.items)&&Array.isArray(saved.moves))state=saved;}catch{}
+const $=id=>document.getElementById(id);
+$('today').textContent=new Date().toLocaleDateString('es-CO',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch{alert('No se pudo guardar la información en este navegador.');}}
+function stockStatus(q){if(q===0)return '<span class="stockpill zero">Agotado</span>';if(q<=5)return '<span class="stockpill low">Stock bajo</span>';return '<span class="stockpill ok">Disponible</span>';}
+function render(){
+ $('references').textContent=state.items.length;
+ $('units').textContent=state.items.reduce((s,x)=>s+x.qty,0);
+ $('lowStock').textContent=state.items.filter(x=>x.qty>0&&x.qty<=5).length;
+ $('outStock').textContent=state.items.filter(x=>x.qty===0).length;
+ const query=$('search').value.trim().toLowerCase();
+ const items=state.items.filter(x=>(x.name+' '+x.sku+' '+x.location).toLowerCase().includes(query)).sort((a,b)=>a.name.localeCompare(b.name));
+ $('inventoryEmpty').hidden=items.length!==0;
+ $('inventoryBody').innerHTML=items.map(x=>`<tr><td><span class="partname">${esc(x.name)}</span><span class="sku">${esc(x.sku)}</span></td><td>${esc(x.location||'—')}</td><td class="qty">${x.qty}</td><td>${stockStatus(x.qty)}</td><td><div class="rowactions"><button class="mini" data-adjust="entrada" data-sku="${esc(x.sku)}" type="button" title="Registrar entrada">＋</button><button class="mini" data-adjust="salida" data-sku="${esc(x.sku)}" type="button" title="Registrar salida">−</button></div></td></tr>`).join('');
+ const moves=state.moves.slice(0,15);
+ $('historyList').innerHTML=moves.length?moves.map(m=>`<div class="move"><div><strong>${esc(m.type==='entrada'?'Entrada':'Salida')} · ${esc(m.name)} (${esc(m.sku)})</strong><small>${esc(m.when)}${m.responsible?' · Responsable: '+esc(m.responsible):''}${m.notes?' · '+esc(m.notes):''}</small></div><span class="delta ${m.type==='entrada'?'plus':'minus'}">${m.type==='entrada'?'+':'−'}${m.qty}</span></div>`).join(''):'<div class="empty">Todavía no hay movimientos registrados.</div>';
+}
+$('movementForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const type=$('type').value,sku=$('sku').value.trim(),name=$('name').value.trim(),qty=Number($('quantity').value),location=$('location').value.trim(),responsible=$('responsible').value.trim(),notes=$('notes').value.trim();
+ if(!sku||!name||!Number.isInteger(qty)||qty<1){alert('Verifica el código, el nombre y una cantidad entera mayor que cero.');return;}
+ let item=state.items.find(x=>x.sku.toLowerCase()===sku.toLowerCase());
+ if(type==='salida'&&!item){alert('Ese código no está registrado. Registra primero una entrada del repuesto.');return;}
+ if(type==='salida'&&item.qty<qty){alert(`Existencias insuficientes. Disponible: ${item.qty} unidad(es).`);return;}
+ if(!item){item={sku,name,qty:0,location};state.items.push(item);}
+ if(type==='entrada'){item.qty+=qty;item.name=name;item.location=location||item.location;}
+ else item.qty-=qty;
+ state.moves.unshift({id:Date.now()+Math.random(),type,sku:item.sku,name:item.name,qty,when:new Date().toLocaleString('es-CO'),responsible,notes});
+ persist();render();e.target.reset();$('type').value='entrada';$('sku').focus();
+});
+$('search').addEventListener('input',render);
+$('inventoryBody').addEventListener('click',e=>{
+ const b=e.target.closest('button[data-adjust]');if(!b)return;
+ const item=state.items.find(x=>x.sku===b.dataset.sku);if(!item)return;
+ $('type').value=b.dataset.adjust;$('sku').value=item.sku;$('name').value=item.name;$('location').value=item.location||'';$('quantity').focus();window.scrollTo({top:0,behavior:'smooth'});
+});
+$('clearHistory').addEventListener('click',()=>{if(!state.moves.length)return;if(confirm('¿Eliminar todo el historial de movimientos? Las existencias actuales no cambiarán.')){state.moves=[];persist();render();}});
+render();
+</script>
+</body></html>
