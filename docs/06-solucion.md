@@ -55,3 +55,7 @@ Con la implementación del sistema web inteligente, LIZCAR'S podrá mejorar la g
 El registro de entradas se propone inicialmente de manera digital por parte del gestor de bodega. La integración con el proceso de ventas deberá definirse de acuerdo con el funcionamiento de la empresa.
 
 Las predicciones y alertas de inteligencia artificial dependerán de la disponibilidad y calidad de los datos históricos del inventario.
+
+## Diagrama de flujo de información
+
+![Diagrama de flujo de información](../assets/flujo-informacion.png)
