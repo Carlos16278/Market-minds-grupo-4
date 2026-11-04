@@ -4,7 +4,7 @@
 |---|---|
 | *Qué vamos a construir* | pagina web para registrar y consultar entradas y salidas de respuestos. |
 | *Tipo de prototipo* | Página web |
-| *Usuario* | Encargada de pedidos |
+| *Usuario* | gestor de bodegas |
 *Hipótesis*
 > creemos que el gestor de bodega podrá reducir los errores en el control de existencias si registra los movimientos de los repuestos en una pagina web que actualiza cantidades disponibles
 ## Versión 0.1
