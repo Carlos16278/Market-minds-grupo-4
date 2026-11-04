@@ -41,6 +41,6 @@ La prueba todavía está pendiente, debido a que el prototipo se encuentra en pr
 
 Esta sección se completará cuando se pueda realizar la prueba con el gestor de bodega de LIZCAR'S.
 
-**Evidencias:** Pendientes.
+
 
 
