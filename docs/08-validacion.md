@@ -43,4 +43,4 @@ Esta sección se completará cuando se pueda realizar la prueba con el gestor de
 
 **Evidencias:** Pendientes.
 
-**Video de validación:** Pendiente.
+
