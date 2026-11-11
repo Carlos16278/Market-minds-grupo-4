@@ -39,6 +39,8 @@ Cuando el prototipo esté disponible, se le pedirá al usuario que interactúe c
 
 La prueba todavía está pendiente, debido a que el prototipo se encuentra en proceso de desarrollo.
 
+https://youtu.be/sixKWtzPavo
+
 Esta sección se completará cuando se pueda realizar la prueba con el gestor de bodega de LIZCAR'S.
 
 
